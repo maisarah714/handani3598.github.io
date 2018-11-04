@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: sans-serif;
+  margin: 0px auto;
+}
+
+.home_nav_top {
+  height: 14vh;
+  box-shadow: 0px 8px 0px #f3f5fa;
+  background-color: #ffffff;
+  width: 100%;
+  z-index: 1;
+}
+
+.home_img_logo {
+  margin: 10px 0 10px 30px;
+  max-width: 20%;
+  height: auto;;
+  float: left;
+}
+
+nav {
+  width: 65%;
+  margin: 0 10px 0 0;
+  float: right;
+
+
+}
+
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+
+
+}
+a:hover#menu-icon {
+
+	background-color: #444;
+	border-radius: 4px 4px 0 0;
+
+}
+
+nav ul {
+  text-align: right;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #323232;
+  font-weight: 750;
+  margin: 10px 20px 0 0;
+
+}
+nav ul li a, nav ul li a:after, nav ul li a:before {
+  transition: all .5s;
+}
+
+nav ul li a:hover {
+  color: #3a4371;
+}
+
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #3a4371;
+  height: 1px;
+}
+
+nav.fill ul li a {
+  transition: all 1s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: white;
+  z-index: 1;
+}
+
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+
+}
+
+.home_img_banner {
+  width: 100%;
+}
+
+
+
+/* left part */
+.column {
+    float: left;
+    width: 20%;
+    margin: 1% 0 5% 2.5%;
+}
+
+/* search by institution */
+.ui-widget { /* #institution box*/
+  width: 300px;
+  background-color: #a0b3de;
+  padding: 15px;
+  margin-bottom: 50px;
+}
+
+#tags { /*institution search box*/
+  width: 90%;
+  font-size: 1em;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+
+
+/* programmes */
+.prog {
+width: 300px;
+height: auto;
+padding: 15px;
+background-color:#a0b3de;
+}
+
+.prog h3{
+  margin-left: 15px;
+}
+
+/* accordion */
+#accordion {
+  width: 85%;
+  margin: 15px 20px;
+  border-style: none;
+  padding: 5px;
+}
+
+#accordion h3{
+  cursor: pointer;
+  padding: 15px 10px;
+  background-color: #f3f5fa;
+  margin: 0;
+}
+
+.group{ /* #accordion p*/
+  padding: 15px 7px;
+  height: 75px;
+  background-color: #d3daee;
+  align-items: center;
+  border-style: none;
+
+}
+
+.group:hover{
+  cursor: pointer;
+}
+
+
+
+/* right part */
+.right {
+  float: left;
+  width: 70%;
+  margin: 5% 0 5% 5%;
+}
+
+/* show pages */
+.filter {
+  width: 100%;
+  padding: 15px 15px;
+  background-color: #a0b3de;
+}
+
+
+/* boxes */
+.cright {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #d3daee;
+  padding: 30px;
+  width: 100%;
+  height: 750px;
+}
+
+.cright img{
+  margin: 5% auto;
+  display: block;
+  width: 180px;
+  height: auto;
+}
+
+.cright p {
+  text-align: center;
+}
+
+/* each box */
+.cright > div {
+  background-color: #f3f5fa;
+  text-align: justify;
+  font-size: 1.2em;
+  padding: 15px;
+  line-height: 1.5;
+}
+
+footer {
+  clear: both;
+  bottom: 0;
+  background-color: #3a4371;
+  color: white;
+  height: 9vh;
+  position: relative;
+  font-size: 14px;
+}
+
+tr img {
+  width: 100%;
+}
+
+table{
+  width: 30%;
+}
+
+/* table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+} */
+
+#sc {
+  width: 7%;
+  text-align: center;
+}
+
+#txsc {
+  padding-left: 3px;
+}
+
+
+
+
+@media only screen and (max-width : 1280px) {
+
+  nav {
+    width: 75%;
+    margin: 0 auto;
+    float: right;
+    display: block;
+  }
+
+  #menu-icon {
+    float: right;
+    background-color: #3a4371;
+
+	}
+
+  nav ul {
+    display: none;
+    text-align: center;
+    list-style: none;
+  }
+
+  nav li a {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    color: #323232;
+    font-weight: 80;
+    font-size: 12px;
+
+  }
+  nav:hover ul {
+		display: block;
+	}
+
+}

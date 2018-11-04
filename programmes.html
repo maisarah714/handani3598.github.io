@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="images/icon.png">
+    <link rel="stylesheet" href="newstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <title>Programmes</title>
+  </head>
+    <script>
+    $(function() {
+      var availableTags = [
+        "International Islamic University Malaysia (IIUM)",
+        "University of Malaya (UM)",
+        "University Sains Malaysia (USM)",
+        "University Kebangsaan Malaysia(UKM)",
+        "University Teknologi Malaysia (UTM)",
+        "University Malaysia Pahang (UMP)",
+        "University Teknologi Mara (UiTM)",
+        "University Putra Malaysia (UPM)"
+      ];
+      $( "#tags" ).autocomplete({
+        source: availableTags
+      });
+    } );
+    </script>
+
+
+    <script>
+   $( function() {
+     $( "#accordion" ).accordion();
+   } );
+   </script>
+
+   <body>
+
+    <div class ="home_nav_top">
+      <a href="index.html">
+      <img src="images/logo.png" alt="h_logo" class="home_img_logo">
+      </a>
+      <nav class="fill">
+        <a href="#" id="menu-icon"></a>
+        <ul>
+          <li><a href="Universities.html">UNIVERSITIES</a></li>
+          <li><a href="programmes.html">PROGRAMMES</a></li>
+          <li><a href="lifeoncampus.html">LIFE ON CAMPUS</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </div>
+    <img src="images/programme_banner.png" alt="huni_banner" class="home_img_banner fade">
+
+
+    <!-- all -->
+      <div class="row">
+    <!-- left only -->
+        <div class="column left">
+
+          <h3>Filter By</h3>
+    <!-- Search Institution -->
+          <div class="ui-widget">
+            <label for="tags"><h3>Institutions</h3></label>
+            <input id="tags" placeholder="Enter University Name">
+          </div>
+    <!-- programmes -->
+            <div class="prog">
+              <h3>Programmes</h3>
+              <div id="accordion">
+
+                <h3>Economics and Management</h3>
+                <div class="group">
+                  <p>Business</p>
+                </div>
+
+                <h3>Education</h3>
+                <div class="group">
+                  <p>TESL</p>
+                </div>
+
+                <h3>Engineering</h3>
+                <div class="group">
+                  <p>Mechanical Engineering</p>
+                </div>
+
+                <h3>Information and Computer Technology</h3>
+                <div class="group">
+                  <p>Computer Science</p>
+                </div>
+
+                <h3>Law</h3>
+                <div class="group">
+                  <p>Shariah Law</p>
+                </div>
+
+                <h3>Medicine</h3>
+                <div class="group">
+                  <p>Dentistry</p>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+    <!-- right part -->
+
+        <div class="right">
+
+        <div class="filter">
+          <h3>Showing 1 to 4</h3>
+        </div>
+
+        <div class="cright">
+          <div class="item1">
+            <p>Universiti Kebangsaan Malaysia (UKM)</p>
+            <img src="images/u_UKM.png">
+            <ul>Bachelor of Law with Honours</ul>
+          </div>
+
+          <div class="item2">
+            <p>University of Malaya (UM)</p>
+            <img src="images/u_UM.png">
+            <ul> Bachelor of Law </ul>
+            <ul> Bachelor of Jurisprudence (External)</ul>
+
+          </div>
+
+          <div class="item3">
+            <p>International Islamic University Malaysia (IIUM)</p>
+            <img src="images/u_IIUM.png" alt="IIUM logo">
+            <ul> Bachelor of Law (Hons) (LL.B)</ul>
+            <ul> Bachelor of Law Shariah (Hons) (LL.B.S)</ul>
+          </div>
+
+          <div class="item4">
+            <p>University Teknologi Mara (UiTM)</p>
+            <img src="images/u_UITM.png">
+            <ul> Bachelor of Law (Hons) (LL.B)</ul>
+             </div>
+           </div>
+       </div>
+
+     </div>
+     <footer><br>
+       <center><table>
+         <tr>
+           <td id = "sc">
+             <a href="#"><img src="images/fb.png"></a></td>
+           <td id = "txsc">Unisity Malaysia</td>
+           <td id = "sc">
+             <a href="#"><img src="images/ig.png"></a></td>
+           <td id = "txsc">@UnisityMalaysia</td>
+           <td id = "sc">
+             <a href="#"><img src="images/tw.png"></a></td>
+           <td id = "txsc">@UnisityMY</td>
+         </tr>
+       </table></center>
+     </footer>
+
+
+
+  </body>
+</html>

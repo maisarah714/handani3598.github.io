@@ -1,0 +1,29 @@
+body {
+  margin: 0px auto;
+}
+
+.view {
+  width: 50%;
+  margin-top: 3%;
+}
+
+.mt-5 {
+  margin: 0 8% 0 8%;
+  text-align: justify;
+}
+
+.btn-mdb-color {
+  width: 50%;
+}
+
+.my-5 {
+  margin: 0 5% 0 5%;
+}
+
+.logo {
+  width: 20%;
+}
+
+.btn {
+  background: #a0b3de;
+}
