@@ -1,0 +1,16 @@
+[
+  {
+    "link": "http://www.um.edu.my",
+    "img": "images/u_UM.png",
+    "name": "University of Malaya",
+    "motto": "Knowledge is the Source of Progress",
+    "location": "Kuala Lumpur, Malaysia"
+  }
+  {
+    "link": "http://www.iium.edu.my",
+    "img": "images/u_IIUM.png",
+    "name": "International Islamic University Malaysia",
+    "motto": "The Garden of Knowledge and Virtue",
+    "location": "Gombak, Kuala Lumpur, Kuantan, Pagoh, Gambang"
+  }
+]
