@@ -1,0 +1,273 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: #222222;
+  /* #ffeb3b */
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  margin : 0px auto;
+  color: #ffffff;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ffeb3b;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 70px;
+}
+
+.sidenav a {
+  padding: 20px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #1c1c1c;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #0d0d0d;
+  font-weight: bold;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 10px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#spansidenav {
+  font-size:35px;
+  cursor:pointer;
+  color: #ffffff;
+  padding: 20px 0px 0px 10px;
+  position: fixed;
+}
+
+#imgprofile {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  margin : 60px 50px 0px 60px;
+}
+
+
+h1, h4, h3 {
+  font-family: 'Itim';
+  color: #fff381;
+  letter-spacing: 4px;
+}
+
+.c1left{
+  float: left;
+  width: 67%;
+  overflow-x: auto;
+}
+
+.c1right{
+  float: left;
+  width: 33%;
+}
+
+
+
+.table {
+  margin: 20px 0 0 20px;
+  border-spacing: 0 10px;
+
+}
+
+.table tr, td {
+	padding: 6px 10px;
+  /* border-radius: 30px; */
+}
+
+tr > td:nth-child(1), td:nth-child(3) {
+	width: 140px;
+  background-color: #fff381;
+  color: #222222;
+  text-align: center;
+  font-weight: bold;
+
+}
+
+tr > td:nth-child(2) {
+  width: 230px;
+}
+
+#c1obj {
+  text-align: justify;
+  margin: 0 20px 30px 0;
+}
+
+.c1academic {
+
+}
+
+.c1academic h5{
+  font-weight: normal;
+}
+
+.c1academic h1{
+  margin-top: 30px;
+}
+
+#date {
+
+}
+
+.c2academic {
+  border: 1px solid white;
+  width: 50%;
+  cursor: pointer;
+}
+
+
+#skildiv {
+  height: 7px;
+  background-color: #ffeb3b;
+  border: none;
+}
+
+.skillgrid {
+  /* Grid Fallback */
+  display: flex;
+  flex-wrap: wrap;
+  /* Supports Grid */
+  display: grid;
+  grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1em;
+}
+
+.grid-skill {
+  display: flex;
+  display: block;
+  height: 45vh;
+  flex: 1 1 200px;
+  text-align: center;
+
+}
+
+.grid-title {
+  width: 100%;
+}
+
+.grid-text {
+  display: block;
+}
+
+
+/* If Grid is supported, remove the margin we set for the fallback */
+@supports (display: grid) {
+  .grid-skill {
+    margin: 0;
+  }
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 250px;
+  height: 10px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #ffffff;
+  border-radius: 90px;
+
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #ffeb3b;
+  border-radius: 90px;
+}
+
+.c1port a {
+  text-decoration: none;
+}
+.imgport {
+  width: 25%;
+  height: auto;
+  margin: 10px 20px 10px 20px;
+
+}
+
+.imgport:hover {
+  box-shadow: 0 0 2px 2px #ffeb3b;
+}
+
+
+.c1contact {
+  background-color: #ffeb3b;
+  
+}
+
+#context {
+  color:#222222;
+  margin-left: 15px;
+}
+
+.conleft {
+  float: left;
+  width: 20%;
+}
+
+#conimg {
+  width: 60%;
+  height: auto;
+  margin-left: 30px;
+}
+
+.conmid {
+  float: left;
+  width: 80%;
+}
+
+#last {
+  margin-bottom: 90px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .imgport  {
+    width: 100%;
+    height: auto;
+  }
+
+  .c1left, .c1right, .c2academic, .conleft, .conmid{
+    width: 100%;
+  }
+
+  .c2academic {
+    width: 100%;
+  }
+
+  #conimg {
+    width: 50%;
+    height: auto;
+  }
+
+  .conmid {
+    text-align: center;
+  }
+
+}
